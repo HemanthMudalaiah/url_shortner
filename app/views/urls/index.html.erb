@@ -8,8 +8,6 @@
       <th><%= model_class.human_attribute_name(:id) %></th>
       <th><%= model_class.human_attribute_name(:base_url) %></th>
       <th><%= model_class.human_attribute_name(:short_url) %></th>
-      <th><%= model_class.human_attribute_name(:short_value) %></th>
-      <th><%= model_class.human_attribute_name(:created_at) %></th>
       <th><%=t '.actions', :default => t("helpers.actions") %></th>
     </tr>
   </thead>
@@ -19,8 +17,6 @@
         <td><%= link_to url.id, url_path(url) %></td>
         <td><%= url.base_url %></td>
         <td><%= url.short_url %></td>
-        <td><%= url.short_value %></td>
-        <td><%=l url.created_at %></td>
         <td>
           <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
                       url_path(url),

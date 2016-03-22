@@ -5,4 +5,4 @@ test:
   base_url: 'http://localhost:3000'
 
 production:
-  base_url: 'http://www.justbooksclc.com'
+  base_url: 'https://damp-ocean-17244.herokuapp.com'

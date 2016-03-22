@@ -1,0 +1,8 @@
+development:
+  base_url: 'http://localhost:3000'
+
+test:
+  base_url: 'http://localhost:3000'
+
+production:
+  base_url: 'http://www.justbooksclc.com'

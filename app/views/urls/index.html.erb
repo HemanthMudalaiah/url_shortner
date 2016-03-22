@@ -1,0 +1,28 @@
+<h1>Listing urls</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Base url</th>
+      <th>Short url</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @urls.each do |url| %>
+      <tr>
+        <td><%= url.base_url %></td>
+        <td><%= link_to url.short_url, url.short_url ,:target => '_blank' %></td>
+        <td><%= link_to 'Show', url %></td>
+        <td><%= link_to 'Destroy', url, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Url', new_url_path %>

@@ -45,7 +45,9 @@ end
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 group :prouction do
 	gem 'pg'
+	gem 'rails_12factor'
 end
+
 
 gem 'settingslogic'
 gem 'haml'
